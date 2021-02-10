@@ -43,7 +43,7 @@
                         <a class="nav-link" href="contato.html">Contato</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="">Login</a>
+                        <a class="nav-link" data-toggle="modal" data-target="#ModalLogin">Login</a>
                     </li>
                     <li class="nav-item active m-md-1 ml-md-2">
                         <a class=" btn btn-outline-primary" href="inscreva.html">Insvreva-se</a>
@@ -277,5 +277,45 @@
                 <p class="mb-0">Caravan &copy; 2021. Alguns direitos reservados</p>
             </div>
         </footer>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="ModalLogin" tabindex="-1" aria-labelledby="Modal de Login" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLoginLabel">Entre na Sua Conta</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <form>
+                        <div class="modal-body">
+                            <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="form-group">
+                            <label for="senha">Senha</label>
+                            <input type="password" class="form-control" id="senha">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6 p-0">
+                                        <p class="text-muted">Esqueceu a senha<a href="#">clique aqui</a></p>
+                                    </div>
+                                    <div class="col-6 mr-auto">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                        <button type="button" class="btn btn-primary">Login</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+  
     </body>
 </html>
