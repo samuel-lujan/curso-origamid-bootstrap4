@@ -105,8 +105,102 @@
                             <input type="text" class="form-control" name="cep" id="cep" placeholder="XXXXX-XXX">
                         </div>
                     </div>
+                    <div class="bg-light rounded box-shaddow p-3 form-group">
+                        <h2 class="h6 text-primary">FORMA DE PAGAMENTO</h2>
+                        <hr>
+                            <nav class="nav btn-group" id="forma-pagamento" role="tablist">
+                                <button class="btn btn-secondary btn-sm active" type="button" data-toggle="tab" href="#cartao" role="tab">Cartão de Crédito</button>
+                                <button class="btn btn-secondary btn-sm " type="button"       data-toggle="tab" href="#boleto" role="tab">Boleto Bancário</button>
+                            </nav>
+                            <div class="tab-content py-3" id="formaPagamentoConteudo">
+                                <div class="tab-pane fade show active" role="tab-panel" id="cartao">
+                                    <form action="">
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label for="nome-cartao">Nome no Cartão</label>
+                                                <input type="text" class="form-control" id="nome-cartao" name="nome-cartao" placeholder="Nome Impresso no cartão">
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <label for="mes">Mês</label>
+                                                <select name="mes" id="mes" class="form-control">
+                                                    <option value="01">JAN</option>
+                                                    <option value="02">FEV</option>
+                                                    <option value="03">MAR</option>
+                                                    <option value="04">ABR</option>
+                                                    <option value="05">MAI</option>
+                                                    <option value="06">JUN</option>
+                                                    <option value="07">JUL</option>
+                                                    <option value="08">AGO</option>
+                                                    <option value="09">SET</option>
+                                                    <option value="10">OUT</option>
+                                                    <option value="11">NOV</option>
+                                                    <option value="12">DEZ</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <label for="ano">Ano</label>
+                                                <input type="number" class="form-control" min="20" max="100">
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-6">
+                                                <label for="cartao">Número do Cartão</label>
+                                                <input type="text" name="num-cartao" id="num-cartao" class="form-control com-md-6" placeholder="5555 5555 5555 555">
+                                            </div>
+                                            <div class="form-group col-6">
+                                                <label for="cartao">Código de Segurança</label>
+                                                <input type="text" name="cod-seguranca" id="cod-seguranca" class="form-control com-md-6" placeholder="XXX">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="tab-pane fade" role="tab-panel" id="boleto">
+                                    <p class="lead">Clique em contratar plano que enviaremos um boleto para o seu e-mail</p>
+                                </div>
+                            </div>
+                    </div>
+                    
+                    
                 </form>
+                <div class="col-md mb-5">
+                    <div class="bg-light rounded p-4 box-shaddow">
+                        <h2>Platinum <span class="badge badge-success">NOVO</span></h2>
+                        
+                        <ul class="list-unstyled pt-4">
+                            <li>->60 Dias de viagem</li>
+                            <hr>
+                            <li>->6 destinos diferentes</li>
+                            <hr>
+                            <li>->Tudo pago pela empresa</li>
+                            <hr>
+                            <li>-> Ingressos para festas</li>
+                        </ul>
+                        <form action="">
+                            <div class="form-group">
+                                <select class="form-control bg-light" id="inputCidades">
+                                  <option>Selecione a cidade</option>
+                                  <option>California</option>
+                                  <option>Paris</option>
+                                  <option>Dublin</option>
+                                </select>
+                              </div>
+                        </form>
+                        <div class="row mt-4 align-items-center">
+                            <div class="col">
+                                <a href="inscricao.html" class="btn btn-primary btn-lg btn-block">Comprar Plano</a>
+                            </div>
+                            <div class="col">
+                                <span class="h4">R$7.500</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div class="form-group">
+                <label for="concordo">Li e concordo com os <a href="#" class="">Termos de Uso</a></label>
+                <input type="checkbox" name="concordo" id="concordo" class="float-left">
+            </div>
+            <button class="btn btn-primary btn-lg">Contratar Plano</button>
         </section>
 
         <footer class="bg-dark text-white mt-5">
